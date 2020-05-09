@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+</head>
+
+<body>
+    <h1>Hello {{name_in_html}}</h1>
+    <FORM id='submit_content' method="POST" action="{{ url_for('hello') }}">
+            <input type="text" name="name_in_form_html"><br><br>
+        <button type="submit" form="submit_content" value="Submit">Build</button>
+    </FORM>
+
+</body>
+
+</html>
